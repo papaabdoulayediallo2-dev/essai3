@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion ucad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        section{
+            width: 50%;
+            border: 1px solid;
+            margin-left: 25%;
+            border-radius: 4px;
+        }
+        h4{
+            text-align: center;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        #infos{
+            padding: 10px;
+            background-color: #d9edf7;
+            color:#3a87ad ;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        input{
+            width: 80%;
+            height: 30px;
+            margin: 20px;
+            padding: 10px auto;
+        }
+        .btn{
+            margin-left: 80%;
+        }
+        .btn button{
+            background-color: #5bc0de;
+            border-color: #5bc0de;
+        }
+        button{
+            background-color: rgb(33, 104, 235);
+            border-color: rgb(33, 104, 235);
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .mp{
+            background-color:#f0ad4e ;
+            border-color:#f0ad4e ;
+        }
+        .verif{
+            background-color:#428bca ;
+            border-color: #428bca;
+        }
+        form{
+            padding: 30px;
+        }
+        .lien{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        .compte a{
+            text-decoration: none;
+            color: white;
+        }
+        .compte{
+            background-color: #5cb85c;
+            border-color: #5cb85c;
+        }
+        .connect{
+            background-color:#5bc0de ;
+            border-color:#5bc0de ;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h4>Espace etudiant</h4>
+        <div id="infos">
+            Veuillez renseigner le nom d'ulisateur et le mot de passe
+        </div>
+        <form>
+            <div>
+                <i class="fa fa-user"></i>
+                <input type="text" name="nom" placeholder="Nom d'utilisateur">
+            </div>
+            <div>
+                <i class="fa fa-lock"></i>
+                <input type="password" name="motdepasse" placeholder="Mot de passe">
+            </div>
+            <div class="btn">
+                <button class="submit">Se connecter</button>
+            </div>
+        </form>
+        <div class="lien">
+            <button class="mp">Mot de passe oublié ?</button>
+            <button class="verif">Vérifier autorisation ?</button>
+            <button class="compte"><a href="compte.html">Créer un compte</a></button>
+        </div>
+    </section>
+</body>
+</html>

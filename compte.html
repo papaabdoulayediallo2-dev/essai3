@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte</title>
+    <style>
+        h4 {
+            text-align: center;
+            padding: 10px 0 10px 0;
+            background-color: lightgray;
+        }
+
+        ul {
+            color: red;
+        }
+
+        section {
+            width: 756px;
+            border: 1px solid;
+            margin-left: 25%;
+            margin-top: 20px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        div label {
+            width: 500px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            padding: 8px;
+            border: 1px solid black;
+            flex: 1;
+        }
+
+        .gris {
+            background-color: #f7f7f7;
+            padding: 10px 0 10px 0;
+        }
+
+        .btn {
+            margin-left: 40%;
+            padding: 10px 0 10px 0;
+        }
+
+        .diatta {
+            background-color: #5cb85c;
+            border-color: #5cb85c;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .diatta2 {
+            background-color: #d9534f;
+            border-color: #d9534f;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        .diatta2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .bii {
+            background-color: #5bc0de;
+            border-color: #5bc0de;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px 10px 20px;
+        }
+        form{
+            margin-bottom: 0;
+             width: 500px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <h4>Création de votre compte d'accés</h4>
+        <div>
+            <ul>
+                <li>Tous les champs sont obligatoires</li>
+                <li>Le mot de passe doit contenir 8 caractères minimum avec un mélange de chiffres et de lettres.</li>
+            </ul>
+        </div>
+        <form>
+            <fieldset>
+
+                <div>
+                    <label for="type_identifiant" class="titre">Type d'identifiant:</label>
+                    <select id="type_identifiant" required>
+                        <option value="" disabled selected>Choisir le type d'identifiant</option>
+                        <option value="cin">Numéro carte d'etudiant</option>
+                        <option value="nu">Numéro table</option>
+                        <option value="passeport">CIN/Passeport</option>
+                        <option value="">INE</option>
+                    </select>
+                </div>
+
+                <div class="gris">
+                    <label for="identifiant" class="titre">Votre Identifiant:</label>
+                    <input id="identifiant" type="text" placeholder="Votre CIN/passeport" required>
+                </div>
+                <div>
+                    <label for="nom" class="titre">Nom:</label>
+                    <input id="nom" type="text" placeholder="Nom de famille" required>
+                </div>
+                <div class="gris">
+                    <label for="prenom" class="titre">Prénom:</label>
+                    <input id="prenom" type="text" placeholder="Prénom" required>
+                </div>
+                <div>
+                    <label for="password" class="password">Mot de passe:</label>
+                    <input id="password" type="password" placeholder="Mot de passe" required>
+                </div>
+                <div class="gris">
+                    <label for="conf_password">Confirmer le mot de passe:</label>
+                    <input id="conf_password" type="password" placeholder="Confirmer le mot de passe" required>
+                </div>
+                <div>
+                    <label for="email" class="email">E-mail personnel:</label>
+                    <input id="email" type="email" placeholder="E-mail personnel" required>
+                </div>
+                <div class="gris">
+                    <label for="captcha">Saisissez les caractères ci-dessous:</label>
+                    <input id="captcha" type="text" placeholder="Saisissez les caractères ci-dessous" required>
+                </div>
+                <div>
+                    <button class="bii">Régénérer</button>
+                </div>
+            </fieldset>
+        </form>
+        <form>
+            <div class="btn">
+                <button type="submit" class="diatta">valider</button>
+                <button class="diatta2"><a href="index.html">Annuler</a></button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
